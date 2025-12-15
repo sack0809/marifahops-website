@@ -19,7 +19,7 @@ export default function Home() {
                 MarifahOps helps CTOs and Engineering Managers build scalable, reliable cloud infrastructure. 
                 We deliver enterprise-grade solutions with minimal marketing fluff—just results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link href="/contact/" className="btn-primary animate-pulse-glow">
                   Get Started
                 </Link>
@@ -27,28 +27,60 @@ export default function Home() {
                   View Case Studies
                 </Link>
               </div>
+              
+              {/* Tech Stack Icons */}
+              <div className="mt-8">
+                <p className="text-sm text-gray-400 mb-4">Built with industry-leading tools:</p>
+                <div className="flex flex-wrap gap-6 items-center">
+                  <div className="tech-icon-container tech-icon-float">
+                    <img src="/images/docker-icon.svg" alt="Docker" className="w-14 h-14 opacity-90 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" />
+                  </div>
+                  <div className="tech-icon-container tech-icon-float-delay-1">
+                    <img src="/images/kubernetes-icon.svg" alt="Kubernetes" className="w-14 h-14 opacity-90 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" />
+                  </div>
+                  <div className="tech-icon-container tech-icon-float-delay-2">
+                    <img src="/images/aws-icon.svg" alt="AWS" className="w-14 h-14 opacity-90 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" />
+                  </div>
+                  <div className="tech-icon-container tech-icon-float-delay-3">
+                    <img src="/images/terraform-icon.svg" alt="Terraform" className="w-14 h-14 opacity-90 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="animate-slide-in-right animate-delay-200">
-              <div className="relative">
-                <div className="absolute inset-0 bg-devops-cyan/20 blur-3xl rounded-full animate-pulse-glow"></div>
-                <img 
-                  src="/images/cloud-architecture.svg" 
-                  alt="Cloud Architecture" 
-                  className="relative w-full h-auto animate-float"
-                />
-                {/* Animated Tech Icons */}
-                <div className="absolute top-0 left-0 w-full h-full">
-                  <div className="absolute top-10 left-10 tech-icon-float">
-                    <img src="/images/docker-icon.svg" alt="Docker" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+              <div className="relative min-h-[400px] flex items-center justify-center">
+                {/* Main Cloud Architecture Graphic */}
+                <div className="relative z-10 w-full max-w-lg">
+                  <div className="absolute inset-0 bg-devops-cyan/20 blur-3xl rounded-full animate-pulse-glow"></div>
+                  <img 
+                    src="/images/cloud-architecture.svg" 
+                    alt="Cloud Architecture" 
+                    className="relative w-full h-auto animate-float"
+                  />
+                </div>
+                
+                {/* Floating Tech Icons around the graphic */}
+                <div className="absolute top-8 left-8 md:top-12 md:left-12 tech-icon-float">
+                  <div className="bg-devops-darker/90 backdrop-blur-sm border border-devops-cyan/50 rounded-lg p-2 shadow-lg shadow-devops-cyan/30 hover:border-devops-cyan transition-all">
+                    <img src="/images/docker-icon.svg" alt="Docker" className="w-12 h-12" />
                   </div>
-                  <div className="absolute top-20 right-16 tech-icon-float-delay-1">
-                    <img src="/images/kubernetes-icon.svg" alt="Kubernetes" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                </div>
+                
+                <div className="absolute top-8 right-8 md:top-12 md:right-12 tech-icon-float-delay-1">
+                  <div className="bg-devops-darker/90 backdrop-blur-sm border border-devops-purple/50 rounded-lg p-2 shadow-lg shadow-devops-purple/30 hover:border-devops-purple transition-all">
+                    <img src="/images/kubernetes-icon.svg" alt="Kubernetes" className="w-12 h-12" />
                   </div>
-                  <div className="absolute bottom-20 left-20 tech-icon-float-delay-2">
-                    <img src="/images/aws-icon.svg" alt="AWS" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                </div>
+                
+                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:bottom-12 tech-icon-float-delay-2">
+                  <div className="bg-devops-darker/90 backdrop-blur-sm border border-devops-green/50 rounded-lg p-2 shadow-lg shadow-devops-green/30 hover:border-devops-green transition-all">
+                    <img src="/images/aws-icon.svg" alt="AWS" className="w-12 h-12" />
                   </div>
-                  <div className="absolute bottom-10 right-10 tech-icon-float-delay-3">
-                    <img src="/images/terraform-icon.svg" alt="Terraform" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                </div>
+                
+                <div className="absolute top-1/2 left-8 -translate-y-1/2 md:left-12 tech-icon-float-delay-3">
+                  <div className="bg-devops-darker/90 backdrop-blur-sm border border-devops-orange/50 rounded-lg p-2 shadow-lg shadow-devops-orange/30 hover:border-devops-orange transition-all">
+                    <img src="/images/terraform-icon.svg" alt="Terraform" className="w-12 h-12" />
                   </div>
                 </div>
               </div>

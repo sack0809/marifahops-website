@@ -175,17 +175,21 @@
   
   @keyframes tech-icon-float {
     0%, 100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-    25% {
-      transform: translateY(-10px) rotate(2deg);
+      transform: translateY(0px) scale(1);
+      opacity: 0.9;
     }
     50% {
-      transform: translateY(-15px) rotate(0deg);
+      transform: translateY(-20px) scale(1.05);
+      opacity: 1;
     }
-    75% {
-      transform: translateY(-10px) rotate(-2deg);
-    }
+  }
+  
+  .tech-icon-container {
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-icon-container:hover {
+    transform: scale(1.15);
   }
   
   .tech-icon-float {
@@ -194,17 +198,17 @@
   
   .tech-icon-float-delay-1 {
     animation: tech-icon-float 4s ease-in-out infinite;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
   }
   
   .tech-icon-float-delay-2 {
     animation: tech-icon-float 4s ease-in-out infinite;
-    animation-delay: 2s;
+    animation-delay: 1.6s;
   }
   
   .tech-icon-float-delay-3 {
     animation: tech-icon-float 4s ease-in-out infinite;
-    animation-delay: 3s;
+    animation-delay: 2.4s;
   }
 }
 
