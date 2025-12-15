@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monitor frame -->
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="#0a0e27" stroke="#00f5ff" stroke-width="2"/>
+  
+  <!-- Screen -->
+  <rect x="70" y="80" width="260" height="150" fill="#050714" stroke="#00f5ff" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Graph lines -->
+  <polyline points="80,200 120,180 160,190 200,150 240,160 280,140 320,130" 
+            fill="none" stroke="#00ff88" stroke-width="2">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="3s" repeatCount="indefinite"/>
+  </polyline>
+  
+  <!-- Data points -->
+  <circle cx="80" cy="200" r="4" fill="#00ff88">
+    <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="150" r="4" fill="#00f5ff">
+    <animate attributeName="r" values="4;6;4" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="130" r="4" fill="#a855f7">
+    <animate attributeName="r" values="4;6;4" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Status indicators -->
+  <circle cx="100" cy="250" r="8" fill="#00ff88">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="120" y="255" fill="#00ff88" font-size="12">Healthy</text>
+  
+  <circle cx="200" cy="250" r="8" fill="#00f5ff">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="220" y="255" fill="#00f5ff" font-size="12">Active</text>
+  
+  <circle cx="300" cy="250" r="8" fill="#a855f7">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="320" y="255" fill="#a855f7" font-size="12">Monitoring</text>
+  
+  <!-- Scanning line -->
+  <line x1="70" y1="100" x2="330" y2="100" stroke="#00f5ff" stroke-width="1" opacity="0.3">
+    <animate attributeName="y1" values="80;230;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="80;230;80" dur="4s" repeatCount="indefinite"/>
+  </line>
+</svg>
+

@@ -1,0 +1,40 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud shapes -->
+  <ellipse cx="100" cy="80" rx="40" ry="30" fill="#00f5ff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="130" cy="80" rx="50" ry="35" fill="#00f5ff" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="160" cy="80" rx="35" ry="25" fill="#00f5ff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Server nodes -->
+  <rect x="50" y="150" width="60" height="40" rx="5" fill="#a855f7" opacity="0.8">
+    <animate attributeName="y" values="150;145;150" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="170" y="150" width="60" height="40" rx="5" fill="#00ff88" opacity="0.8">
+    <animate attributeName="y" values="150;145;150" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="290" y="150" width="60" height="40" rx="5" fill="#00f5ff" opacity="0.8">
+    <animate attributeName="y" values="150;145;150" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Connection lines -->
+  <line x1="80" y1="170" x2="200" y2="170" stroke="#00f5ff" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="200" y1="170" x2="320" y2="170" stroke="#00f5ff" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Data flow dots -->
+  <circle cx="140" cy="170" r="3" fill="#00ff88">
+    <animate attributeName="cx" values="80;200;80" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="260" cy="170" r="3" fill="#00ff88">
+    <animate attributeName="cx" values="200;320;200" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>
+
