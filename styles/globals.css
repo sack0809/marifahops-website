@@ -210,5 +210,68 @@
     animation: tech-icon-float 4s ease-in-out infinite;
     animation-delay: 2.4s;
   }
+  
+  .tech-icon-flow-arrow {
+    opacity: 0.6;
+  }
+  
+  @keyframes tech-flow-dash {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 20;
+    }
+  }
+  
+  .tech-flow-path {
+    animation: tech-flow-dash 2s linear infinite;
+  }
+  
+  @keyframes tech-flow-pulse {
+    0%, 100% {
+      opacity: 0.3;
+      stroke-width: 2;
+    }
+    50% {
+      opacity: 0.8;
+      stroke-width: 3;
+    }
+  }
+  
+  .tech-flow-line {
+    animation: tech-flow-pulse 3s ease-in-out infinite;
+  }
+  
+  .tech-flow-line-1 {
+    animation-delay: 0s;
+  }
+  
+  .tech-flow-line-2 {
+    animation-delay: 0.75s;
+  }
+  
+  .tech-flow-line-3 {
+    animation-delay: 1.5s;
+  }
+  
+  .tech-flow-line-4 {
+    animation-delay: 2.25s;
+  }
+  
+  @keyframes tech-flow-dot-glow {
+    0%, 100% {
+      opacity: 0.8;
+      r: 4;
+    }
+    50% {
+      opacity: 1;
+      r: 6;
+    }
+  }
+  
+  .tech-flow-dot {
+    animation: tech-flow-dot-glow 2s ease-in-out infinite;
+  }
 }
 
