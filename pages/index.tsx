@@ -11,7 +11,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="container-custom py-20 sm:py-32 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-in-left">
+            <div>
               <h1 className="heading-1 mb-6">
                 Cloud Infrastructure Consulting for Engineering Leaders
               </h1>
@@ -20,7 +20,7 @@ export default function Home() {
                 We deliver enterprise-grade solutions with minimal marketing fluff—just results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link href="/contact/" className="btn-primary animate-pulse-glow">
+                <Link href="/contact/" className="btn-primary">
                   Get Started
                 </Link>
                 <Link href="/case-studies/" className="btn-secondary">
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="animate-slide-in-right animate-delay-200">
+            <div>
               <div className="relative min-h-[400px] flex items-center justify-center">
                 {/* Main Cloud Architecture Graphic */}
                 <div className="relative z-10 w-full max-w-lg">
@@ -99,9 +99,9 @@ export default function Home() {
         {/* Services Preview */}
         <section className="py-20 relative z-10">
           <div className="container-custom">
-            <h2 className="heading-2 text-center mb-12 animate-fade-in-up">What We Do</h2>
+            <h2 className="heading-2 text-center mb-12">What We Do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-devops-darker border border-devops-cyan/30 p-6 rounded-lg hover:border-devops-cyan/60 transition-all group animate-fade-in-up animate-delay-200">
+              <div className="bg-devops-darker border border-devops-cyan/30 p-6 rounded-lg hover:border-devops-cyan/60 transition-all group">
                 <div className="mb-4 flex justify-center">
                   <img 
                     src="/images/cloud-architecture.svg" 
@@ -115,7 +115,7 @@ export default function Home() {
                   From initial architecture to production deployment.
                 </p>
               </div>
-              <div className="bg-devops-darker border border-devops-purple/30 p-6 rounded-lg hover:border-devops-purple/60 transition-all group animate-fade-in-up animate-delay-400">
+              <div className="bg-devops-darker border border-devops-purple/30 p-6 rounded-lg hover:border-devops-purple/60 transition-all group">
                 <div className="mb-4 flex justify-center">
                   <img 
                     src="/images/devops-pipeline.svg" 
@@ -129,7 +129,7 @@ export default function Home() {
                   infrastructure as code, and automated deployments.
                 </p>
               </div>
-              <div className="bg-devops-darker border border-devops-green/30 p-6 rounded-lg hover:border-devops-green/60 transition-all group animate-fade-in-up animate-delay-600">
+              <div className="bg-devops-darker border border-devops-green/30 p-6 rounded-lg hover:border-devops-green/60 transition-all group">
                 <div className="mb-4 flex justify-center">
                   <img 
                     src="/images/infrastructure-monitor.svg" 
@@ -143,7 +143,7 @@ export default function Home() {
                   recommendations for cost optimization and reliability.
                 </p>
               </div>
-              <div className="bg-devops-darker border border-devops-orange/30 p-6 rounded-lg hover:border-devops-orange/60 transition-all group animate-fade-in-up animate-delay-800">
+              <div className="bg-devops-darker border border-devops-orange/30 p-6 rounded-lg hover:border-devops-orange/60 transition-all group">
                 <div className="mb-4 flex justify-center">
                   <img 
                     src="/images/platform-as-product.svg" 
@@ -170,7 +170,7 @@ export default function Home() {
         <section className="container-custom py-20 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="text-center md:text-left animate-slide-in-left">
+              <div className="text-center md:text-left">
                 <h2 className="heading-2 mb-6">Our Approach</h2>
                 <p className="text-body mb-8">
                   We work directly with engineering leadership to understand your unique challenges. 
@@ -180,9 +180,9 @@ export default function Home() {
                   Learn About Our Approach
                 </Link>
               </div>
-              <div className="animate-slide-in-right animate-delay-400">
+              <div>
                 <div className="relative">
-                  <div className="absolute inset-0 bg-devops-purple/20 blur-3xl rounded-full animate-pulse-glow"></div>
+                  <div className="absolute inset-0 bg-devops-purple/20 blur-3xl rounded-full"></div>
                   <img 
                     src="/images/devops-pipeline.svg" 
                     alt="DevOps Process" 
@@ -194,12 +194,6 @@ export default function Home() {
           </div>
         </section>
         
-        {/* Animated Background Elements */}
-        <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-devops-cyan/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute top-40 right-20 w-40 h-40 bg-devops-purple/10 rounded-full blur-3xl animate-float animate-delay-400"></div>
-          <div className="absolute bottom-20 left-1/4 w-36 h-36 bg-devops-green/10 rounded-full blur-3xl animate-float animate-delay-600"></div>
-        </div>
       </div>
     </Layout>
   );
