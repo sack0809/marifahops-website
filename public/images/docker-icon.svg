@@ -1,0 +1,26 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Docker whale -->
+    <path d="M 40 20 L 50 25 L 50 35 L 40 40 L 30 35 L 30 25 Z" fill="#0db7ed" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Container boxes -->
+    <rect x="15" y="45" width="12" height="12" rx="2" fill="#0db7ed" opacity="0.8">
+      <animate attributeName="y" values="45;43;45" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="45" width="12" height="12" rx="2" fill="#0db7ed" opacity="0.8">
+      <animate attributeName="y" values="45;43;45" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="45" y="45" width="12" height="12" rx="2" fill="#0db7ed" opacity="0.8">
+      <animate attributeName="y" values="45;43;45" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="45" width="12" height="12" rx="2" fill="#0db7ed" opacity="0.8">
+      <animate attributeName="y" values="45;43;45" dur="1.5s" begin="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Waves -->
+    <path d="M 10 60 Q 20 55, 30 60 T 50 60 T 70 60" stroke="#0db7ed" stroke-width="2" fill="none" opacity="0.6">
+      <animate attributeName="d" values="M 10 60 Q 20 55, 30 60 T 50 60 T 70 60;M 10 60 Q 20 65, 30 60 T 50 60 T 70 60;M 10 60 Q 20 55, 30 60 T 50 60 T 70 60" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
+

@@ -36,6 +36,21 @@ export default function Home() {
                   alt="Cloud Architecture" 
                   className="relative w-full h-auto animate-float"
                 />
+                {/* Animated Tech Icons */}
+                <div className="absolute top-0 left-0 w-full h-full">
+                  <div className="absolute top-10 left-10 tech-icon-float">
+                    <img src="/images/docker-icon.svg" alt="Docker" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="absolute top-20 right-16 tech-icon-float-delay-1">
+                    <img src="/images/kubernetes-icon.svg" alt="Kubernetes" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="absolute bottom-20 left-20 tech-icon-float-delay-2">
+                    <img src="/images/aws-icon.svg" alt="AWS" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="absolute bottom-10 right-10 tech-icon-float-delay-3">
+                    <img src="/images/terraform-icon.svg" alt="Terraform" className="w-16 h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -45,7 +60,7 @@ export default function Home() {
         <section className="py-20 relative z-10">
           <div className="container-custom">
             <h2 className="heading-2 text-center mb-12 animate-fade-in-up">What We Do</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-devops-darker border border-devops-cyan/30 p-6 rounded-lg hover:border-devops-cyan/60 transition-all group animate-fade-in-up animate-delay-200">
                 <div className="mb-4 flex justify-center">
                   <img 
@@ -86,6 +101,20 @@ export default function Home() {
                 <p className="text-gray-300">
                   Comprehensive audits of your existing infrastructure with actionable 
                   recommendations for cost optimization and reliability.
+                </p>
+              </div>
+              <div className="bg-devops-darker border border-devops-orange/30 p-6 rounded-lg hover:border-devops-orange/60 transition-all group animate-fade-in-up animate-delay-800">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="/images/platform-as-product.svg" 
+                    alt="Platform as a Product" 
+                    className="w-32 h-24 opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+                <h3 className="heading-3 mb-4">Platform as a Product</h3>
+                <p className="text-gray-300">
+                  Build internal platforms that enable your engineering teams to ship faster. 
+                  Self-service infrastructure, developer tooling, and platform engineering.
                 </p>
               </div>
             </div>

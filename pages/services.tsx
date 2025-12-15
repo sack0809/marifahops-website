@@ -78,6 +78,23 @@ export default function Services() {
                 <li>Training and knowledge transfer</li>
               </ul>
             </div>
+
+            <div className="max-w-4xl">
+              <h2 className="heading-2 mb-6">Platform as a Product</h2>
+              <p className="text-body mb-4">
+                Build internal platforms that enable your engineering teams to ship faster. We help you 
+                create self-service infrastructure, developer tooling, and platform engineering capabilities 
+                that reduce friction and accelerate delivery.
+              </p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li>Internal developer platform design and implementation</li>
+                <li>Self-service infrastructure provisioning</li>
+                <li>Developer portal and tooling</li>
+                <li>Platform team structure and practices</li>
+                <li>Golden paths and paved roads for common use cases</li>
+                <li>Platform observability and metrics</li>
+              </ul>
+            </div>
           </div>
 
           <div className="mt-16 text-center">

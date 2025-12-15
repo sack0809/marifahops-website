@@ -1,0 +1,64 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Platform layers -->
+  <g>
+    <!-- Base layer -->
+    <rect x="50" y="200" width="300" height="40" rx="5" fill="#0a0e27" stroke="#00f5ff" stroke-width="2" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="200" y="225" text-anchor="middle" fill="#00f5ff" font-size="12" font-weight="bold">Infrastructure</text>
+    
+    <!-- Middle layer -->
+    <rect x="70" y="150" width="260" height="40" rx="5" fill="#1a1f3a" stroke="#00ff88" stroke-width="2" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="200" y="175" text-anchor="middle" fill="#00ff88" font-size="12" font-weight="bold">Platform Services</text>
+    
+    <!-- Top layer -->
+    <rect x="90" y="100" width="220" height="40" rx="5" fill="#2a2f4a" stroke="#a855f7" stroke-width="2" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="200" y="125" text-anchor="middle" fill="#a855f7" font-size="12" font-weight="bold">Applications</text>
+    
+    <!-- Connection lines -->
+    <line x1="200" y1="140" x2="200" y2="150" stroke="#00f5ff" stroke-width="2" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="200" y1="190" x2="200" y2="200" stroke="#00f5ff" stroke-width="2" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- API endpoints -->
+    <circle cx="120" cy="120" r="5" fill="#00ff88">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="120" r="5" fill="#00ff88">
+      <animate attributeName="r" values="5;8;5" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Data flow arrows -->
+    <path d="M 100 120 L 120 120" stroke="#00ff88" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)">
+      <animate attributeName="stroke-dasharray" values="0,20;20,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 300 120 L 280 120" stroke="#00ff88" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)">
+      <animate attributeName="stroke-dasharray" values="0,20;20,0" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00ff88"/>
+    </marker>
+  </defs>
+  
+  <!-- Floating service icons -->
+  <circle cx="50" cy="50" r="15" fill="#00f5ff" opacity="0.3">
+    <animate attributeName="cy" values="50;30;50" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="60" r="12" fill="#a855f7" opacity="0.3">
+    <animate attributeName="cy" values="60;40;60" dur="3.5s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>
+

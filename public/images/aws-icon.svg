@@ -1,0 +1,20 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- AWS arrow -->
+    <path d="M 20 40 L 40 20 L 60 40 L 50 40 L 50 60 L 30 60 L 30 40 Z" fill="#ff9900" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Cloud elements -->
+    <ellipse cx="25" cy="35" rx="8" ry="5" fill="#232f3e" opacity="0.8">
+      <animate attributeName="cx" values="25;27;25" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="55" cy="45" rx="10" ry="6" fill="#232f3e" opacity="0.8">
+      <animate attributeName="cx" values="55;53;55" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Lightning bolt -->
+    <path d="M 40 25 L 42 35 L 38 35 L 40 45" stroke="#ff9900" stroke-width="2" fill="none" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
+

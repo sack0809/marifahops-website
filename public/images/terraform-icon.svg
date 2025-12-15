@@ -1,0 +1,29 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Terraform hexagon -->
+    <path d="M 40 20 L 55 30 L 55 50 L 40 60 L 25 50 L 25 30 Z" fill="#623ce4" stroke="#623ce4" stroke-width="2" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Infrastructure blocks -->
+    <rect x="30" y="32" width="8" height="8" rx="1" fill="white" opacity="0.9">
+      <animate attributeName="y" values="32;30;32" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="42" y="32" width="8" height="8" rx="1" fill="white" opacity="0.9">
+      <animate attributeName="y" values="32;30;32" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="44" width="8" height="8" rx="1" fill="white" opacity="0.9">
+      <animate attributeName="y" values="44;42;44" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="42" y="44" width="8" height="8" rx="1" fill="white" opacity="0.9">
+      <animate attributeName="y" values="44;42;44" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Connection lines -->
+    <line x1="38" y1="36" x2="42" y2="36" stroke="white" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="34" y1="40" x2="34" y2="44" stroke="white" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>
+
