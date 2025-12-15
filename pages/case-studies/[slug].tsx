@@ -14,12 +14,12 @@ export default function CaseStudyPage({ caseStudy }: CaseStudyPageProps) {
       title={caseStudy.title}
       description={caseStudy.description}
     >
-      <div className="bg-[#f5faf8]">
+      <div>
         <article className="container-custom py-20">
           <div className="max-w-3xl mx-auto">
             <Link 
               href="/case-studies/" 
-              className="text-primary-600 hover:text-primary-700 mb-8 inline-block"
+              className="text-devops-cyan hover:text-devops-green mb-8 inline-block transition-colors"
             >
               ← Back to Case Studies
             </Link>
@@ -27,7 +27,7 @@ export default function CaseStudyPage({ caseStudy }: CaseStudyPageProps) {
             <header className="mb-8">
               <h1 className="heading-1 mb-4">{caseStudy.title}</h1>
               {caseStudy.date && (
-                <p className="text-gray-600">
+                <p className="text-gray-400">
                   {new Date(caseStudy.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',

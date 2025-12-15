@@ -6,7 +6,7 @@ export default function Approach() {
       title="Our Approach"
       description="How MarifahOps works with engineering leaders to deliver cloud infrastructure solutions."
     >
-      <div className="bg-[#f5faf8]">
+      <div>
         <section className="container-custom py-20">
           <div className="max-w-3xl">
             <h1 className="heading-1 mb-6">Our Approach</h1>
@@ -63,9 +63,9 @@ export default function Approach() {
             </div>
           </div>
 
-          <div className="mt-16 bg-gray-50 p-8 rounded-lg max-w-4xl">
+          <div className="mt-16 bg-devops-darker border border-devops-purple/30 p-8 rounded-lg max-w-4xl">
             <h2 className="heading-3 mb-4">What Sets Us Apart</h2>
-            <ul className="space-y-3 text-gray-700">
+            <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
                 <span className="text-primary-600 mr-3">✓</span>
                 <span><strong>No vendor lock-in:</strong> We recommend tools and platforms based on your needs, not our partnerships.</span>

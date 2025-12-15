@@ -14,7 +14,7 @@ export default function CaseStudiesPage({ caseStudies }: CaseStudiesPageProps) {
       title="Case Studies"
       description="Real-world examples of cloud infrastructure and DevOps solutions we've delivered for engineering teams."
     >
-      <div className="bg-[#f5faf8]">
+      <div>
         <section className="container-custom py-20">
           <div className="max-w-3xl mb-12">
             <h1 className="heading-1 mb-6">Case Studies</h1>
@@ -25,8 +25,8 @@ export default function CaseStudiesPage({ caseStudies }: CaseStudiesPageProps) {
           </div>
 
           {caseStudies.length === 0 ? (
-            <div className="bg-gray-50 p-8 rounded-lg text-center">
-              <p className="text-gray-600">No case studies available yet. Check back soon.</p>
+            <div className="bg-devops-darker border border-devops-purple/30 p-8 rounded-lg text-center">
+              <p className="text-gray-400">No case studies available yet. Check back soon.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -34,12 +34,12 @@ export default function CaseStudiesPage({ caseStudies }: CaseStudiesPageProps) {
                 <Link
                   key={caseStudy.slug}
                   href={`/case-studies/${caseStudy.slug}/`}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                  className="bg-devops-darker border border-devops-cyan/30 rounded-lg p-6 hover:border-devops-green/60 hover:shadow-lg hover:shadow-devops-green/20 transition-all"
                 >
                   <h2 className="heading-3 mb-3">{caseStudy.title}</h2>
-                  <p className="text-gray-600 mb-4">{caseStudy.description}</p>
+                  <p className="text-gray-300 mb-4">{caseStudy.description}</p>
                   {caseStudy.date && (
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-400">
                       {new Date(caseStudy.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',

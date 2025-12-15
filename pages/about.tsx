@@ -6,7 +6,7 @@ export default function About() {
       title="About"
       description="Learn about MarifahOps Consulting and our mission to help engineering leaders build better cloud infrastructure."
     >
-      <div className="bg-[#f5faf8]">
+      <div>
         <section className="container-custom py-20">
           <div className="max-w-3xl">
             <h1 className="heading-1 mb-6">About MarifahOps</h1>
@@ -38,7 +38,7 @@ export default function About() {
               <p className="text-body mb-4">
                 We specialize in working with engineering leadership at companies that:
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Are scaling their cloud infrastructure and need expert guidance</li>
                 <li>Want to modernize their DevOps practices and CI/CD pipelines</li>
                 <li>Need an objective assessment of their current infrastructure</li>
@@ -52,25 +52,25 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Transparency</h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-300">
                     Clear communication, honest assessments, and no hidden agendas.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Practicality</h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-300">
                     Solutions that work in the real world, not just in theory.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Results</h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-300">
                     We measure success by the value we deliver to your business.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Independence</h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-300">
                     No vendor partnerships or technology preferences—just what's best for you.
                   </p>
                 </div>

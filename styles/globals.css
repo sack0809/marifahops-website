@@ -8,7 +8,10 @@
   }
   
   body {
-    @apply bg-[#f5faf8] text-gray-900;
+    @apply bg-devops-dark text-gray-100;
+    background-image: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 
@@ -18,39 +21,42 @@
   }
   
   .heading-1 {
-    @apply text-4xl sm:text-5xl font-bold text-gray-900;
+    @apply text-4xl sm:text-5xl font-bold text-white;
+    text-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
   }
   
   .heading-2 {
-    @apply text-3xl sm:text-4xl font-bold text-gray-900;
+    @apply text-3xl sm:text-4xl font-bold text-white;
   }
   
   .heading-3 {
-    @apply text-2xl sm:text-3xl font-semibold text-gray-900;
+    @apply text-2xl sm:text-3xl font-semibold text-white;
   }
   
   .text-body {
-    @apply text-lg text-gray-700 leading-relaxed;
+    @apply text-lg text-gray-300 leading-relaxed;
   }
   
   .btn-primary {
-    @apply inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-colors;
+    @apply inline-block px-6 py-3 bg-devops-cyan text-devops-dark font-medium rounded-md hover:bg-devops-green transition-all;
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
   }
   
   .btn-secondary {
-    @apply inline-block px-6 py-3 bg-gray-100 text-gray-900 font-medium rounded-md hover:bg-gray-200 transition-colors;
+    @apply inline-block px-6 py-3 bg-devops-purple text-white font-medium rounded-md hover:bg-devops-orange transition-all;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
   }
   
   .prose {
-    @apply text-gray-700;
+    @apply text-gray-300;
   }
   
   .prose h2 {
-    @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+    @apply text-2xl font-bold text-white mt-8 mb-4;
   }
   
   .prose h3 {
-    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+    @apply text-xl font-semibold text-white mt-6 mb-3;
   }
   
   .prose p {
@@ -70,11 +76,11 @@
   }
   
   .prose strong {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold text-devops-cyan;
   }
   
   .prose a {
-    @apply text-primary-600 hover:text-primary-700 underline;
+    @apply text-devops-cyan hover:text-devops-green underline;
   }
 }
 

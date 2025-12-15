@@ -7,7 +7,7 @@ export default function Services() {
       title="Services"
       description="Cloud architecture, DevOps, CI/CD, and infrastructure consulting services for enterprise engineering teams."
     >
-      <div className="bg-[#f5faf8]">
+      <div>
         <section className="container-custom py-20">
           <div className="max-w-3xl">
             <h1 className="heading-1 mb-6">Our Services</h1>
@@ -25,7 +25,7 @@ export default function Services() {
                 Whether you're migrating to the cloud or optimizing existing infrastructure, 
                 we ensure your architecture is secure, cost-effective, and maintainable.
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                 <li>Multi-cloud and hybrid cloud strategies</li>
                 <li>Microservices and container orchestration</li>
                 <li>Serverless architecture design</li>
@@ -40,7 +40,7 @@ export default function Services() {
                 Accelerate your development cycles with modern DevOps practices and automated CI/CD pipelines. 
                 We help you build a culture of continuous integration and deployment.
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                 <li>CI/CD pipeline design and implementation</li>
                 <li>Infrastructure as Code (Terraform, CloudFormation, Pulumi)</li>
                 <li>Containerization and orchestration (Docker, Kubernetes)</li>
@@ -55,7 +55,7 @@ export default function Services() {
                 Get an expert assessment of your current infrastructure with actionable recommendations 
                 for improvement. We identify cost savings, performance bottlenecks, and reliability risks.
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                 <li>Comprehensive infrastructure audits</li>
                 <li>Cost optimization analysis</li>
                 <li>Performance and scalability assessment</li>
@@ -70,7 +70,7 @@ export default function Services() {
                 Migrate your workloads to the cloud with minimal disruption. We handle the complexity 
                 so you can focus on your business.
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
                 <li>Migration strategy and planning</li>
                 <li>Lift-and-shift and cloud-native transformations</li>
                 <li>Data migration and synchronization</li>

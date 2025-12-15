@@ -13,11 +13,11 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="bg-white border-b border-gray-200">
+    <header className="bg-devops-darker border-b border-devops-cyan/30 backdrop-blur-sm">
       <nav className="container-custom" aria-label="Main">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-gray-900">
+            <Link href="/" className="text-xl font-bold text-devops-cyan hover:text-devops-green transition-colors">
               MarifahOps
             </Link>
           </div>
@@ -31,8 +31,8 @@ export default function Header() {
                   href={item.href}
                   className={`text-sm font-medium transition-colors ${
                     isActive
-                      ? 'text-primary-600 border-b-2 border-primary-600 pb-1'
-                      : 'text-gray-600 hover:text-gray-900'
+                      ? 'text-devops-cyan border-b-2 border-devops-cyan pb-1'
+                      : 'text-gray-400 hover:text-devops-green'
                   }`}
                 >
                   {item.name}
@@ -43,7 +43,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-gray-600 hover:text-gray-900"
+              className="text-gray-400 hover:text-devops-cyan"
               aria-label="Menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
